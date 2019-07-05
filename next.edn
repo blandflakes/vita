@@ -1,0 +1,6 @@
+{:stack       {:languages {:core      ["Lua" "Rust" "Erlang"]
+                           :auxiliary ["Clojurescript"]}
+               :tools     ["tmux" "awk" "ansible" "terraform"]
+               :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "dhall"]}
+ :environment {:operating-systems ["BSD" "Guix"]}
+ :patterns    ["GraphQL" "gRPC"]}
