@@ -1,2 +1,2 @@
-{:deps {hiccup {:mvn/version "1.0.5"}
+{:deps {hiccup        {:mvn/version "1.0.5"}
         clj-htmltopdf {:mvn/version "0.1-alpha6"}}}

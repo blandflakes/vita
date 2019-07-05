@@ -10,3 +10,7 @@ representation of my skills.
 directly.
 
 `vita.clj` generates HTML and PDF versions of my resume from `vita.edn`.
+
+## Usage
+
+To actually run the generator, use `clj -m vita`
