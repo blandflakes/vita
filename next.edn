@@ -1,6 +1,8 @@
-{:stack       {:languages {:core      ["Lua" "Rust" "Erlang"]
-                           :auxiliary ["Clojurescript"]}
+{:stack       {:languages {:core      ["Lua" "Rust" "Erlang" "Kotlin"]
+                           :auxiliary ["Clojurescript" "Dart"]
+                           :niche     ["Ballerina" "Pony" "Wren"]}
                :tools     ["tmux" "awk" "ansible" "terraform"]
-               :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "dhall"]}
+               :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "dhall" "crux"
+                           "graal"]}
  :environment {:operating-systems ["BSD" "Guix"]}
  :patterns    ["GraphQL" "gRPC"]}

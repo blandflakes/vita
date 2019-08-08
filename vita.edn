@@ -16,8 +16,7 @@
                  :github   "https://github.com/blandflakes"
                  :linkedin "https://www.linkedin.com/in/blandflakes/"}
  :patterns      ["REST" "Dependency Injection" "Message Queues" "Streaming Architectures" "Distributed Systems"
-                 "Continuous Integration and Deployment (CircleCI)" "NoSQL" "Relational Databases"
-                 "Structured Logging"]
+                 "Continuous Integration and Deployment (CircleCI)" "NoSQL" "Relational Databases" "Structured Logging"]
  :interests     ["Procedural Generation" "Complex Systems" "Modeling and Simulation" "Automata"
                  "Heuristic Optimization"]
  :domains       ["Public Health" "Biotech" "Transportation" "Ethics" "Privacy" "Sustainability"]
