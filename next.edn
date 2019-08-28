@@ -3,6 +3,6 @@
                            :niche     ["Ballerina" "Pony" "Wren"]}
                :tools     ["tmux" "awk" "ansible" "terraform"]
                :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "dhall" "crux"
-                           "graal"]}
+                           "graal" "kafka" "monix"]}
  :environment {:operating-systems ["BSD" "Guix"]}
- :patterns    ["GraphQL" "gRPC"]}
+ :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}
