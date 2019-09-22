@@ -1,8 +1,9 @@
-{:stack       {:languages {:core      ["Lua" "Rust" "Erlang" "Kotlin"]
-                           :auxiliary ["Clojurescript" "Dart"]
-                           :niche     ["Ballerina" "Pony" "Wren"]}
-               :tools     ["tmux" "awk" "ansible" "terraform"]
-               :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "dhall" "crux"
-                           "graal" "kafka" "monix"]}
- :environment {:operating-systems ["BSD" "Guix"]}
+{:stack       {:languages {:core        ["OCaml|Haskell"]
+                           :auxiliary   []
+                           :niche       ["Dhall"]
+                           :researching ["Scheme" "Zig" "Lua" "Wren" "Smalltalk"]}
+               :tools     ["tmux" "awk" "terraform"]
+               :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "crux" "graal" "kafka"
+                           "monix" "zeromq"]}
+ :environment {:operating-systems ["BSD" "Guix" "MirageOS"]}
  :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}
