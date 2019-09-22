@@ -15,7 +15,13 @@
       [:body
        [:h1 (str (:name vita) " - " (:title vita))]
        [:p (:summary vita)]
-       [:span (interpose " | " (map (fn [[name url]] (link-to url name)) (:personas vita)))]
+       (let [contact (->> vita
+                          :personas
+                          (map (fn [[name url]] (link-to url name)))
+                          (cons (System/getenv "PHONE_CONTACT"))
+                          (cons (System/getenv "EMAIL_CONTACT"))
+                          (filter identity))]
+         [:span (interpose " | " contact)])
        [:div
         [:h2 "Stack"]
         [:h3 "Languages"]
