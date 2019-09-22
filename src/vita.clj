@@ -25,11 +25,14 @@
        [:div
         [:h2 "Stack"]
         [:h3 "Languages"]
-        [:p (str/join ", " (get-in vita [:stack :languages :core]))]
+        [:p "Primarily: " (str/join ", " (get-in vita [:stack :languages :core]))]
+        [:p "Also: " (str/join ", ") (get-in vita [:stack :languages :auxiliary])]
         [:h3 "Tools"]
         [:p (str/join ", " (get-in vita [:stack :tools]))]
         [:h3 "Patterns"]
-        [:p (str/join ", " (:patterns vita))]]
+        [:p (str/join ", " (:patterns vita))]
+        [:h3 "Platforms"]
+        [:p (str/join ", " (get-in vita [:stack :platforms] vita))]]
        [:div
         [:h2 "Experience"]
         (for [company (:experience vita)]

@@ -4,8 +4,8 @@
                  maintainable systems."
  :stack         {:languages {:core      ["Scala" "Java" "Clojure" "Ruby"]
                              :auxiliary ["Python" "Javascript"]}
-                 :tools     ["docker" "mvn" "akka-streams" "akka-http" "Alexa Skills Kit" "Ambassador" "Elasticsearch"
-                             "avro" "circe"]
+                 :tools     ["docker" "mvn" "akka-streams" "Alexa Skills Kit" "Ambassador" "Elasticsearch" "avro"
+                             "circe"]
                  :platforms ["Amazon Web Services" "Google Cloud Platform" "Kubernetes"]}
  :environment   {:operating-systems ["Arch Linux" "Debian"]
                  :ide               "Intellij"
