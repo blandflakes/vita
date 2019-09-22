@@ -26,7 +26,7 @@
         [:h2 "Stack"]
         [:h3 "Languages"]
         [:p "Primarily: " (str/join ", " (get-in vita [:stack :languages :core]))]
-        [:p "Also: " (str/join ", ") (get-in vita [:stack :languages :auxiliary])]
+        [:p "Also: " (str/join ", " (get-in vita [:stack :languages :auxiliary]))]
         [:h3 "Tools"]
         [:p (str/join ", " (get-in vita [:stack :tools]))]
         [:h3 "Patterns"]
