@@ -97,7 +97,7 @@
                             :started          "April 2012"
                             :ended            "January 2016"
                             :responsibilities ["Implemented storage solutions for all language and speech data, supporting launch of several voice enabled systems, including the Amazon Echo, the FireTV, and the Dash"
-                                               "Designed and implemented a highly scalable aggregation service which groups data in a secure,distributed store in near real-time for use in research, replacing a cronjob that would take days to run"
+                                               "Designed and implemented a highly scalable aggregation service which groups data in a secure, distributed store in near real-time for use in research, replacing a cronjob that would take days to run"
                                                "Designed and implemented a real-time monitoring framework for a system for creating sample speech data from real spoken phrases. This system was used to avoid errors in recording system configuration that would prevent the collection of data"
                                                "Rewrote synchronous, single-request workflow to incorporate AJAX requests, which significantly increased throughput for generating transcriptions and annotations"]}]}
                  {:company "CSC (now DXC)"
