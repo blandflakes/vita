@@ -46,6 +46,18 @@
                (for [responsibility (:responsibilities role)]
                  [:li responsibility])]])])]
        [:div
+        [:h2 "Projects"]
+        (for [project (:side-projects vita)]
+          [:div
+           [:h3 (:name project)]
+           [:p (:description project)]
+           (when-let [links (:links project)]
+             [:div
+              [:p "Links:"]
+              [:ul
+               (for [[label link] links]
+                 [:li (link-to link label)])]])])]
+       [:div
         [:h2 "Education"]
         (for [program (:education vita)]
           [:div

@@ -30,16 +30,16 @@
                   :graduated   "December 2010"}]
  :side-projects [{:name        "echo-chamber"
                   :description "Clojure SDK for creating Echo Applications"
-                  :links       ["https://github.com/blandflakes/echo-chamber"]}
+                  :links       {"Github" "https://github.com/blandflakes/echo-chamber"}}
                  {:name        "echo-stopwatch"
                   :description "Clojure app for starting, pausing, resuming, resetting, and stopping timers"
-                  :links       ["https://github.com/blandflakes/echo-stopwatch"]}
+                  :links       {"Github" "https://github.com/blandflakes/echo-stopwatch"}}
                  {:name        "futility"
                   :description "A self-hosted tool for Tn-Seq data analysis and visualization"
-                  :links       ["https://f-utility.hms.harvard.edu/"
-                                "https://github.com/blandflakes/futility-js"
-                                "https://github.com/blandflakes/futility-server"
-                                "https://github.com/blandflakes/futility-lib"]}]
+                  :links       {"f-utility at HMS" "https://f-utility.hms.harvard.edu/"
+                                "Front-end (Github)" "https://github.com/blandflakes/futility-js"
+                                "Back-end (Github)" "https://github.com/blandflakes/futility-server"
+                                "Algorithms (Github)" "https://github.com/blandflakes/futility-lib"}}]
  :experience    [{:company "Asimov"
                   :url     "https://asimov.io"
                   :roles   [{:title            "Software Engineer"
