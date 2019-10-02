@@ -1,9 +1,9 @@
-{:stack       {:languages {:core        ["OCaml|Haskell"]
+{:stack       {:languages {:core        ["Go" "Rust" "Scheme"]
                            :auxiliary   []
                            :niche       ["Dhall"]
-                           :researching ["Scheme" "Zig" "Lua" "Wren" "Smalltalk"]}
+                           :researching ["Scheme" "Lua" "Janet" "Smalltalk"]}
                :tools     ["tmux" "awk" "terraform"]
                :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "crux" "graal" "kafka"
                            "monix" "zeromq"]}
- :environment {:operating-systems ["BSD" "Guix" "MirageOS"]}
+ :environment {:operating-systems ["BSD" "Guix"]}
  :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}
