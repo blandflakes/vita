@@ -4,6 +4,6 @@
                            :researching ["Scheme" "Lua" "Janet" "Smalltalk"]}
                :tools     ["tmux" "awk" "terraform"]
                :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "crux" "graal" "kafka"
-                           "monix" "zeromq"]}
+                           "monix" "zeromq" "quarkus|helidon"]}
  :environment {:operating-systems ["BSD" "Guix"]}
  :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}
