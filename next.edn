@@ -1,7 +1,7 @@
-{:stack       {:languages {:core        ["Go" "Rust" "Scheme"]
+{:stack       {:languages {:core        ["Rust" "Scheme"]
                            :auxiliary   []
                            :niche       ["Dhall"]
-                           :researching ["Scheme" "Lua" "Janet" "Smalltalk"]}
+                           :researching ["Scheme" "Haskell" "Lua" "Smalltalk"]}
                :tools     ["tmux" "awk" "terraform"]
                :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "crux" "graal" "kafka"
                            "monix" "zeromq" "quarkus|helidon"]}
