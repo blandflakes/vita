@@ -1,8 +1,8 @@
-{:stack       {:languages {:core        ["SML"]
-                           :auxiliary   []
+{:stack       {:languages {:core        ["Kotlin" "Haskell"]
+                           :auxiliary   ["Dart"]
                            :niche       ["Dhall"]
-                           :researching ["Schemes" "Lua" "Smalltalk" "Erlang"]}
-               :tools     ["ksh" "awk" "tmux" "terraform"]
+                           :influence   ["Smalltalk" "Erlang"]}
+               :tools     ["awk" "ksh" "tmux" "terraform" "jq" "dbt"]
                :libraries ["java.nio" "core.logic" "core.async" "clojure.spec" "Datomic" "edn" "crux" "graal" "kafka"
                            "zeromq" "quarkus|helidon"]}
  :environment {:operating-systems ["DragonflyBSD" "Guix"]}

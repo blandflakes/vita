@@ -42,7 +42,7 @@
                                 ["Algorithms (Github)" "https://github.com/blandflakes/futility-lib"]]}]
  :experience    [{:company "Asimov"
                   :url     "https://asimov.io"
-                  :roles   [{:title            "Software Engineer"
+                  :roles   [{:title            "Senior Software Engineer"
                              :started          "April 2018"
                              :responsibilities ["Customized and deployed Prometheus and Grafana operators for collection and monitoring of metrics"
                                                 "Refitted data warehouse to route tasks using message queues (PubSub) to isolate scaling, failure, retries, etc"
