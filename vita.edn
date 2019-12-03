@@ -5,7 +5,7 @@
  :stack         {:languages {:core      ["Scala" "Java" "Clojure" "Ruby"]
                              :auxiliary ["Python" "Javascript"]}
                  :tools     ["docker" "mvn" "akka-streams" "Alexa Skills Kit" "Ambassador" "Elasticsearch" "avro"
-                             "circe"]
+                             "circe" "java.nio"]
                  :platforms ["Amazon Web Services" "Google Cloud Platform" "Kubernetes"]}
  :environment   {:operating-systems ["Arch Linux" "Debian"]
                  :ide               "Intellij"
