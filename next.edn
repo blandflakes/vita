@@ -1,9 +1,9 @@
-{:stack       {:languages {:core        ["Kotlin" "Haskell"]
-                           :auxiliary   ["Dart"]
+{:stack       {:languages {:core        ["Haskell"]
+                           :auxiliary   ["Dart" "Datalog"]
                            :niche       ["Dhall"]
-                           :influence   ["Smalltalk" "Erlang" "Forth/Factor" "J"]}
-               :tools     ["awk" "ksh" "tmux" "terraform" "jq" "dbt"]
+                           :influence   ["Smalltalk" "Erlang" "Forth|Factor" "APL|K|J"]}
+               :tools     ["awk" "tmux" "terraform" "jq" "dbt" "bpf" "hasura" "postgrest"]
                :libraries ["core.logic" "core.async" "clojure.spec" "Datomic" "edn" "crux" "graal" "kafka"
-                           "zeromq" "quarkus|helidon"]}
- :environment {:operating-systems ["DragonflyBSD" "Guix"]}
+                           "zeromq" "jooq"]}
+ :environment {:operating-systems ["DragonflyBSD" "MirageOS"]}
  :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}
