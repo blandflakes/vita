@@ -2,8 +2,9 @@
  :title         "Software Engineer"
  :summary       "Infrastructure and operations-focused back-end engineer with a track record of building reliable and
                  maintainable systems."
- :stack         {:languages {:core      ["Scala" "Java" "Clojure" "Ruby"]
-                             :auxiliary ["Python" "Javascript"]}
+ :stack         {:languages {:core        ["Scala" "Java" "Clojure" "Ruby"]
+                             :auxiliary   ["Python" "Javascript"]
+                             :influential []}
                  :tools     ["docker" "mvn" "akka-streams" "Alexa Skills Kit" "Ambassador" "Elasticsearch" "avro"
                              "circe" "java.nio"]
                  :platforms ["Amazon Web Services" "Google Cloud Platform" "Kubernetes"]}
