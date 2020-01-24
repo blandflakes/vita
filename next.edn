@@ -1,9 +1,10 @@
-{:stack       {:languages {:core        ["OCaml" "Gerbil"]
-                           :auxiliary   ["Datalog" "Erlang" "Prolog"]
-                           :niche       ["Dhall|Cue"]
+{:stack       {:languages {:core        ["OCaml" "Gerbil Scheme"]
+                           :auxiliary   ["Erlang" "C"]
+                           :niche       ["Datalog" "Dhall|Cue" "Prolog"]
                            :influential ["Smalltalk" "Forth|Factor" "APL|K|J"]}
                :tools     ["awk" "tmux" "rethinkdb" "terraform" "jq" "dbt" "bpf" "hasura" "postgrest"
                            "recutils" "datomic" "edn" "crux" "graal" "kafka" "zeromq" "jooq"
-                           "Jetbrains MPS" "Eclipse MicroProfile" "guix"]
+                           "Jetbrains MPS" "Eclipse MicroProfile" "guix" "pledge/unveil"]}
+ :interests   ["Quantum Computing" "Modeling and Simulation"]
  :environment {:operating-systems ["DragonflyBSD" "MirageOS"]}
  :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}

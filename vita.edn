@@ -1,13 +1,13 @@
 {:name          "Brian Fults"
  :title         "Software Engineer"
  :summary       "Infrastructure and operations-focused back-end engineer with a track record of building reliable and
-                 maintainable systems."
- :stack         {:languages {:core        ["Scala" "Java" "Clojure" "Ruby"]
-                             :auxiliary   ["Python" "Javascript"]
-                             :influential []}
-                 :tools     ["docker" "mvn" "akka-streams" "Alexa Skills Kit" "Ambassador" "Elasticsearch" "avro"
-                             "circe" "java.nio"]
-                 :platforms ["Amazon Web Services" "Google Cloud Platform" "Kubernetes"]}
+                 maintainable systems. At home right below your business logic."
+ :interests     ["Procedural Generation" "Programming Languages" "Operating Systems"]
+ :stack         {:languages {:core          ["Scala" "Java" "Clojure" "Ruby"]
+                             :auxiliary     ["Python" "Javascript"]
+                             :influenced-by []}
+                 :tools     ["docker" "shell" "akka" "circe" "java.util.concurrent" "java.nio" "Elasticsearch"]
+                 :platforms ["Amazon Web Services (AWS)" "Google Cloud Platform (GCP)" "Kubernetes"]}
  :environment   {:operating-systems ["Arch Linux" "Debian"]
                  :ide               "Intellij"
                  :editor            "vim"
@@ -17,105 +17,69 @@
                  :github   "https://github.com/blandflakes"
                  :linkedin "https://www.linkedin.com/in/blandflakes/"}
  :patterns      ["REST" "Dependency Injection" "Message Queues" "Streaming Architectures" "Distributed Systems"
-                 "Continuous Integration and Deployment (CircleCI)" "NoSQL" "Relational Databases" "Structured Logging"]
- :interests     ["Procedural Generation" "Complex Systems" "Modeling and Simulation" "Automata"
-                 "Heuristic Optimization"]
- :domains       ["Public Health" "Biotech" "Transportation" "Ethics" "Privacy" "Sustainability"]
+                 "Continuous Integration and Deployment (CI/CD)" "NoSQL" "Relational Databases" "Structured Logging"]
  :diversions    ["running" "hiking" "mountain dulcimer" "reading" "brewing"]
  :education     [{:degree      "B.S."
                   :major       "Computer Science"
                   :institution "Virginia Polytechnic Institute and State University"
                   :location    "Blacksburg, Virginia"
-                  :gpa         "3.66/4.0"
-                  :major-gpa   "3.80/4.0"
                   :graduated   "December 2010"}]
- :side-projects [{:name        "echo-chamber"
-                  :description "Clojure SDK for creating Echo Applications"
-                  :links       [["Github" "https://github.com/blandflakes/echo-chamber"]]}
-                 {:name        "echo-stopwatch"
-                  :description "Clojure app for starting, pausing, resuming, resetting, and stopping timers"
-                  :links       [["Github" "https://github.com/blandflakes/echo-stopwatch"]]}
-                 {:name        "futility"
-                  :description "A self-hosted tool for Tn-Seq data analysis and visualization"
-                  :links       [["f-utility at HMS" "https://f-utility.hms.harvard.edu/"]
-                                ["Front-end (Github)" "https://github.com/blandflakes/futility-js"]
-                                ["Back-end (Github)" "https://github.com/blandflakes/futility-server"]
-                                ["Algorithms (Github)" "https://github.com/blandflakes/futility-lib"]]}]
+ :side-projects []
  :experience    [{:company "Asimov"
                   :url     "https://asimov.io"
                   :roles   [{:title            "Senior Software Engineer"
                              :started          "April 2018"
-                             :responsibilities ["Customized and deployed Prometheus and Grafana operators for collection and monitoring of metrics"
-                                                "Refitted data warehouse to route tasks using message queues (PubSub) to isolate scaling, failure, retries, etc"
-                                                "Performed regular operational checks and maintenance of deployed infrastructural components"
-                                                "Drove adoption of continuous build and deploys using CircleCI"
-                                                "Transformed raw Benchling entities into denormalized, queryable forms"
-                                                "Held talks and interactive labs for engineers and non-engineers to learn Scala, databases, and SQL"
-                                                "Used akka-streams to extract and warehouse all entities from Benchling's REST API"
-                                                "Created a schema registry and validator using Avro and Google Cloud DataStore"
-                                                "Designed and implemented data warehouse using Google Cloud Storage and BigQuery"
-                                                "Established conventions for code review and programming language standards"
-                                                "Suggested goals and prioritization for quarterly infrastructural work"
-                                                "Set up LetsEncrypt for wildcard subdomain certificates"
-                                                "Implemented an authentication service for verifying IAP signatures on incoming requests"
-                                                "Deployed and operated Elasticsearch, Fluentd, Kibana logging stack"
-                                                "Integrated of Identity-Aware Proxy with Ambassador for SSO to internal applications"
-                                                "Deployed, configured, and managed Kubernetes cluster on GKE"]}]}
+                             :responsibilities ["Technical leader, established conventions for design docs, code reviews, labs to teach Scala and SQL for engineers and non-engineers, etc"
+                                                "Set goals and prioritization for quarterly infrastructural work"
+                                                "Deploy and operate infrastructure - Kubernetes (GKE), logging (EFK), certificates (LetsEncrypt), auth/z (Google IAP + Ambassador), metrics and monitoring (Prometheus + Grafana)"
+                                                "Support software development platform - CI/CD (CircleCI)"
+                                                "Developed custom admission controller to automatically apply a set of best practices to deployments, and to control placement of workloads on appropriate node types"
+                                                "Developed and maintained data warehouse with blob storage, querying, triggers/subscriptions to subsets of data (Google Cloud Storage, BigQuery, PubSub)"
+                                                "ETL of Benchling data using akka-streams, transformed into denormalized, queryable forms"
+                                                "Implemented schema registry with validator support for Avro schemas (Google Cloud DataStore)"]}]}
                  {:company "Toast"
                   :url     "https://pos.toasttab.com/"
-                  :roles   [{:title            "Software Engineer Team Lead"
-                             :team             "Labor, Payroll, and Cash"
-                             :started          "February 2018"
-                             :ended            "April 2018"
-                             :responsibilities ["Led team of 2 engineers working on cash management and labor features"
-                                                "Coordinated with project management on technical roadmap in anticipation of product roadmap"
-                                                "Provided mentorship, code review, and direct feedback to junior engineers on team"]}
-                            {:title            "Software Engineer Team Lead",
-                             :team             "Front of House"
+                  :roles   [{:title            "Senior Software Engineer, Team Lead",
+                             :team             "Front of House -> Labor, Payroll, and Cash"
                              :started          "June 2017"
-                             :ended            "February 2018"
-                             :responsibilities ["Led a team of 6 engineers developing Front of House features for restaurant wait staff management"
+                             :ended            "April 2018"
+                             :responsibilities ["Led a team of up to 6 engineers developing features for restaurant wait staff management"
                                                 "Responsible for design and task breakdown of features and bug fixes"
-                                                "Provided career mentorship and technical feedback to junior engineers"
-                                                "Created year-long technical roadmap for addressing quality and operational technical debt in 2018"
+                                                "Provided career mentorship, code review, and feedback to engineers on team"
+                                                "Created year-long technical roadmap for anticipating product roadmap and addressing quality and operational technical debt"
                                                 "(Hackathon) Automated uploading of log files from devices"]}
                             {:title            "Senior Software Developer"
                              :team             "Android Platform"
                              :started          "February 2016"
                              :ended            "June 2017"
-                             :responsibilities ["Focused on implementing robust infrastructure to support building and operating the Toast application"
+                             :responsibilities ["Focused on implementing robust infrastructure to support building and operating the Toast application - fixed memory leaks and race conditions, rep"
                                                 "Rewrote mock printer, which is used in our testing infrastructure to act like a printer without requiring physical interaction, from a naive loop to actually simulate a printer’s state machine"
                                                 "Replaced Postgres event log with ElasticSearch-backed document storage"
-                                                "Identified and removed numerous race conditions, memory leaks, and other code safety issues"
-                                                "Regularly recruited and interviewed new engineers"
-                                                "Improved interview processes and designed new interview question which led to the deprecation of a previously existing question"
-                                                "Moved payment processing workflow from asynchronous, in-memory tasks to a persistent job queue, allowing in-flight payments to survive application crashes"
-                                                "Implemented support for embedding amounts such as weight or prices in barcodes"
-                                                "(Hackathon) Prototyped automated product mix importing for initial menu configuration"
-                                                "(Hackathon) Voice ordering using the Amazon Echo and Toast"]}]}
+                                                "Regularly recruited and interviewed new engineers, improved interview processes via question and rubric development"]}]}
                  {:company "Amazon"
                   :url     "https://www.amazon.com/"
                   :roles   [{:title            "Software Development Engineer"
-                            :team             "Digital Products"
-                            :started          "April 2012"
-                            :ended            "January 2016"
-                            :responsibilities ["Implemented storage solutions for all language and speech data, supporting launch of several voice enabled systems, including the Amazon Echo, the FireTV, and the Dash"
-                                               "Designed and implemented a highly scalable aggregation service which groups data in a secure, distributed store in near real-time for use in research, replacing a cronjob that would take days to run"
-                                               "Designed and implemented a real-time monitoring framework for a system for creating sample speech data from real spoken phrases. This system was used to avoid errors in recording system configuration that would prevent the collection of data"
-                                               "Rewrote synchronous, single-request workflow to incorporate AJAX requests, which significantly increased throughput for generating transcriptions and annotations"]}]}
-                 {:company "CSC (now DXC)"
-                  :url     "https://www.dxc.technology/"
-                  :roles   [{:title            "Programmer Analyst Professional"
-                             :started          "January 2011"
-                             :ended            "April 2012"
-                             :responsibilities ["Implemented a system to compare tactical decision-making to specification using logfiles for the purposes of identifying discrepancies when deciding which ship should take action to shoot down an incoming missile"
-                                                "Created a language parsing system for gathering information from natural language security disclosure emails and automatically dispersing remediation steps to contacts on affected platforms"]}]}
-                 {:company "Virginia Tech Computer Science Department"
-                  :url     "https://cs.vt.edu/"
-                  :roles   [{:title            "Undergraduate Teaching Assistant"
-                             :started          "August 2009"
-                             :ended            "December 2010"
-                             :responsibilities ["Assisted with 'CS 2114: Software Design and Data Structures' and 'CS 2104 Problem Solving'"
-                                                "Tutored students during office hours"
-                                                "Led lab sessions"
-                                                "Graded homework assignments, tests, and projects"]}]}]}
+                             :team             "Digital Products"
+                             :started          "April 2012"
+                             :ended            "January 2016"
+                             :responsibilities ["Implemented storage solutions for all language and speech data, supporting launch of several voice enabled systems, including the Amazon Echo, the FireTV, and the Dash"
+                                                "Designed and implemented a highly scalable aggregation service which groups data in a secure, distributed store in near real-time for use in research, replacing a cronjob that would take days to run"
+                                                "Designed and implemented a real-time monitoring framework for a system for creating sample speech data from real spoken phrases. This system was used to avoid errors in recording system configuration that would prevent the collection of data"
+                                                "Rewrote synchronous, single-request workflow to incorporate AJAX requests, which significantly increased throughput for generating transcriptions and annotations"]}]}
+                 {:company    "CSC (now DXC)"
+                  :url        "https://www.dxc.technology/"
+                  :roles      [{:title            "Programmer Analyst Professional"
+                                :started          "January 2011"
+                                :ended            "April 2012"
+                                :responsibilities ["Implemented a system to audit tactical decision-making by Ballistic Missile Defense (BMD) Program"
+                                                   "Contributed to a language parsing system for dispersing remediation steps in response to information security disclosure emails"]}]}
+                 {:company    "Virginia Tech Computer Science Department"
+                  :url        "https://cs.vt.edu/"
+                  :irrelevant true
+                  :roles      [{:title            "Undergraduate Teaching Assistant"
+                                :started          "August 2009"
+                                :ended            "December 2010"
+                                :responsibilities ["Assisted with 'CS 2114: Software Design and Data Structures' and 'CS 2104 Problem Solving'"
+                                                   "Tutored students during office hours"
+                                                   "Led lab sessions"
+                                                   "Graded homework assignments, tests, and projects"]}]}]}

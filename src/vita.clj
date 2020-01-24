@@ -35,35 +35,40 @@
         [:p (str/join ", " (get-in vita [:stack :platforms] vita))]]
        [:div
         [:h2 "Experience"]
-        (for [company (:experience vita)]
+        (for [company (filter (complement :irrelevant) (:experience vita))]
           [:div
            [:h3 (link-to (:url company) (:company company))]
            (for [role (:roles company)]
              [:div
-              [:h4 (:title role)]
+              [:h4 (if-let [team (:team role)]
+                     (str (:title role) ", " team)
+                     (:title role))]
               [:p (str (:started role) " - " (get role :ended "present"))]
               [:ul
                (for [responsibility (:responsibilities role)]
                  [:li responsibility])]])])]
-       [:div
-        [:h2 "Projects"]
-        (for [project (:side-projects vita)]
-          [:div
-           [:h3 (:name project)]
-           [:p (:description project)]
-           (when-let [links (:links project)]
-             [:div
-              [:p "Links:"]
-              [:ul
-               (for [[label link] links]
-                 [:li (link-to link label)])]])])]
+       (when-let [projects (seq (:side-projects vita))]
+         [:div
+          [:h2 "Projects"]
+          (for [project projects]
+            [:div
+             [:h3 (:name project)]
+             [:p (:description project)]
+             (when-let [links (:links project)]
+               [:div
+                [:p "Links:"]
+                [:ul
+                 (for [[label link] links]
+                   [:li (link-to link label)])]])])])
        [:div
         [:h2 "Education"]
         (for [program (:education vita)]
           [:div
            [:h3 (str (:degree program) " " (:major program) ", " (:graduated program))]
-           [:p (str (:institution program) ", " (:location program))]
-           [:p (str "GPA: " (:gpa program)) (if-let [major-gpa (:major-gpa program)] (str " Major GPA: " major-gpa))]])]])))
+           [:p (str (:institution program) ", " (:location program))]])]
+       [:div
+        [:h2 "Interests"]
+        [:p (str/join ", " (:diversions vita))]]])))
 
 (defn -main
   "Generates HTML and PDF versions of vita.edn"
