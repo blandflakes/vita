@@ -4,7 +4,7 @@
                            :influential ["Smalltalk" "Forth|Factor" "APL|K|J"]}
                :tools     ["awk" "tmux" "rethinkdb" "terraform" "jq" "dbt" "bpf" "hasura" "postgrest"
                            "recutils" "datomic" "edn" "crux" "graal" "kafka" "zeromq" "jooq"
-                           "Jetbrains MPS" "Eclipse MicroProfile" "guix" "pledge/unveil"]}
+                           "Jetbrains MPS" "Eclipse MicroProfile" "guix" "pledge/unveil" "vimwiki"]}
  :interests   ["Quantum Computing" "Modeling and Simulation"]
  :environment {:operating-systems ["DragonflyBSD" "MirageOS"]}
  :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}
