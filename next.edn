@@ -1,6 +1,6 @@
 {:stack       {:languages {:core        ["OCaml" "Gerbil Scheme"]
                            :auxiliary   ["Erlang" "C"]
-                           :niche       ["Datalog" "Dhall|Cue" "Prolog"]
+                           :niche       ["Datalog" "Dhall|Cue" "Prolog" "Unison"]
                            :influential ["Smalltalk" "Forth|Factor" "APL|K|J"]}
                :tools     ["awk" "tmux" "rethinkdb" "terraform" "jq" "dbt" "bpf" "hasura" "postgrest"
                            "recutils" "datomic" "edn" "crux" "graal" "kafka" "zeromq" "jooq"
