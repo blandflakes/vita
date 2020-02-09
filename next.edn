@@ -2,9 +2,18 @@
                            :auxiliary   ["Erlang" "C"]
                            :niche       ["Datalog" "Dhall|Cue" "Prolog" "Unison"]
                            :influential ["Smalltalk" "Forth|Factor" "APL|K|J"]}
-               :tools     ["awk" "tmux" "rethinkdb" "terraform" "jq" "dbt" "bpf" "hasura" "postgrest"
-                           "recutils" "datomic" "edn" "crux" "graal" "kafka" "zeromq" "jooq"
-                           "Jetbrains MPS" "Eclipse MicroProfile" "guix" "pledge/unveil" "vimwiki"]}
+               :tools     [; CLI
+                           "awk" "tmux" "recutils" "jq" "dbt" "bpf"
+                           ; Prototype/high leverage libraries and services
+                           "hasura" "postgrest"
+                           ; Databases
+                           "datomic" "crux" "rethinkdb"
+                           ; Message buses
+                           "kafka" "pulsar" "zeromq"
+                           ; Platform tools
+                           "graal" "Jetbrains MPS" "guix" "RAML"
+                           ; Core libraries, syscalls
+                           "jooq" "http4s" "pledge/unveil" "Akka Typed" "cats"]}
  :interests   ["Quantum Computing" "Modeling and Simulation"]
  :environment {:operating-systems ["DragonflyBSD" "MirageOS"]}
  :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}
