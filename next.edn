@@ -1,7 +1,7 @@
-{:stack       {:languages {:core        ["OCaml" "Gerbil Scheme"]
-                           :auxiliary   ["Erlang" "C"]
-                           :niche       ["Datalog" "Dhall|Cue" "Prolog" "Unison"]
-                           :influential ["Smalltalk" "Forth|Factor" "APL|K|J"]}
+{:stack       {:languages {:core        ["Gerbil Scheme"]
+                           :auxiliary   ["Elixir/Erlang" "C"]
+                           :niche       ["Datalog" "Dhall|Cue" "Prolog"]
+                           :influential ["Smalltalk" "Forth|Factor" "APL|K|J" "OCaml" "Unison"]}
                :tools     [; CLI
                            "awk" "tmux" "recutils" "jq" "dbt" "bpf"
                            ; Prototype/high leverage libraries and services
@@ -11,7 +11,7 @@
                            ; Message buses
                            "kafka" "pulsar" "zeromq"
                            ; Platform tools
-                           "graal" "Jetbrains MPS" "guix" "RAML"
+                           "graal" "Jetbrains MPS" "guix"
                            ; Core libraries, syscalls
                            "jooq" "http4s" "pledge/unveil" "Akka Typed" "cats"]}
  :interests   ["Quantum Computing" "Modeling and Simulation"]
