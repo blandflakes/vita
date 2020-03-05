@@ -1,6 +1,7 @@
-{:stack       {:languages {:core        ["Gerbil Scheme"]
-                           :auxiliary   ["Elixir/Erlang" "C"]
+{:stack       {:languages {:core        ["Gerbil Scheme" "OCaml"]
+                           :auxiliary   ["C"]
                            :niche       ["Datalog" "Dhall|Cue" "Prolog"]
+                           :holding     ["Elixir/Erlang"]
                            :influential ["Smalltalk" "Forth|Factor" "APL|K|J" "OCaml" "Unison"]}
                :tools     [; CLI
                            "awk" "tmux" "recutils" "jq" "dbt" "bpf"
