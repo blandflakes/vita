@@ -1,20 +1,20 @@
-{:stack       {:languages {:core        ["Gerbil Scheme" "OCaml"]
-                           :auxiliary   ["C"]
+{:stack       {:languages {:core        ["OCaml"]
+                           :auxiliary   ["Chibi Scheme" "C"]
                            :niche       ["Datalog" "Dhall|Cue" "Prolog"]
                            :holding     ["Elixir/Erlang"]
-                           :influential ["Smalltalk" "Forth|Factor" "APL|K|J" "OCaml" "Unison"]}
+                           :influential ["Smalltalk" "Forth|Factor" "APL|K|J" "Unison"]}
                :tools     [; CLI
                            "awk" "tmux" "recutils" "jq" "dbt" "bpf"
                            ; Prototype/high leverage libraries and services
                            "hasura" "postgrest"
-                           ; Databases
-                           "datomic" "crux" "rethinkdb"
+                           ; "Databases"
+                           "datomic" "crux" "rethinkdb" "redis"
                            ; Message buses
                            "kafka" "pulsar" "zeromq"
                            ; Platform tools
                            "graal" "Jetbrains MPS" "guix"
                            ; Core libraries, syscalls
-                           "jooq" "http4s" "pledge/unveil" "Akka Typed" "cats"]}
+                           "jooq" "http4s" "pledge/unveil" "cats"]}
  :interests   ["Quantum Computing" "Modeling and Simulation"]
  :environment {:operating-systems ["DragonflyBSD" "MirageOS"]}
  :patterns    ["GraphQL" "gRPC" "streaming APIs" "WebSockets"]}
