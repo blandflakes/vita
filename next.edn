@@ -12,7 +12,7 @@
                            ; Message buses
                            "kafka" "pulsar" "zeromq"
                            ; Platform tools
-                           "graal" "Jetbrains MPS" "guix"
+                           "graal" "Jetbrains MPS" "guix", "gatling"
                            ; Core libraries, syscalls
                            "jooq" "http4s" "pledge/unveil" "cats"]}
  :interests   ["Quantum Computing" "Modeling and Simulation"]
